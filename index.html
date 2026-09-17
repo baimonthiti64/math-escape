@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>MATH ESCAPE</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- START SCREEN -->
+  <section id="startScreen" class="screen active">
+
+    <div class="card">
+
+      <div class="lock">🔐</div>
+
+      <h1>MATH ESCAPE</h1>
+
+      <p class="subtitle">
+        คณิตศาสตร์คือกุญแจสู่อิสรภาพ
+      </p>
+
+      <p>
+        คุณติดอยู่ในห้องลึกลับ<br>
+        มีเวลา <b>120 วินาที</b> ในการไขปริศนา
+      </p>
+
+      <button id="startBtn">
+        START GAME
+      </button>
+
+    </div>
+
+  </section>
+
+
+  <!-- GAME SCREEN -->
+  <section id="gameScreen" class="screen">
+
+    <div class="game-container">
+
+      <header>
+
+        <h1>MATH ESCAPE</h1>
+
+        <div class="stats">
+
+          <div>
+            ⏱️ <span id="timer">120</span>
+          </div>
+
+          <div>
+            ❤️ <span id="lives">3</span>
+          </div>
+
+          <div>
+            ⭐ <span id="score">0</span>
+          </div>
+
+        </div>
+
+      </header>
+
+
+      <main class="card">
+
+        <div class="room">
+          ROOM <span id="roomNumber">1</span> / 4
+        </div>
+
+        <h2 id="roomTitle">
+          Digital Lock
+        </h2>
+
+        <p id="story">
+          ประตูถูกล็อกด้วยระบบคณิตศาสตร์
+        </p>
+
+
+        <div class="question-box">
+
+          <div id="question">
+            18 + 24 ÷ 6 × 2 = ?
+          </div>
+
+        </div>
+
+
+        <input
+          type="number"
+          id="answer"
+          placeholder="พิมพ์คำตอบ"
+        >
+
+
+        <div class="buttons">
+
+          <button id="submitBtn">
+            🔓 UNLOCK
+          </button>
+
+          <button id="hintBtn" class="hint">
+            💡 HINT
+          </button>
+
+        </div>
+
+
+        <p id="message"></p>
+
+      </main>
+
+    </div>
+
+  </section>
+
+
+  <!-- VICTORY SCREEN -->
+  <section id="victoryScreen" class="screen">
+
+    <div class="card">
+
+      <div class="victory-icon">
+        🏆
+      </div>
+
+      <h1>
+        ESCAPED!
+      </h1>
+
+      <p>
+        ยินดีด้วย! คุณหนีออกจากห้องได้สำเร็จ
+      </p>
+
+      <h2>
+        คะแนนของคุณ:
+        <span id="finalScore">0</span>
+      </h2>
+
+      <button id="restartBtn">
+        PLAY AGAIN
+      </button>
+
+    </div>
+
+  </section>
+
+
+  <!-- GAME OVER SCREEN -->
+  <section id="gameOverScreen" class="screen">
+
+    <div class="card">
+
+      <div class="victory-icon">
+        💀
+      </div>
+
+      <h1>
+        GAME OVER
+      </h1>
+
+      <p>
+        เวลาและชีวิตของคุณหมดแล้ว...
+      </p>
+
+      <button id="retryBtn">
+        TRY AGAIN
+      </button>
+
+    </div>
+
+  </section>
+
+
+  <!-- IMPORTANT: JavaScript ต้องอยู่ตรงนี้ -->
+  <script src="script.js"></script>
+
+</body>
+
+</html>
